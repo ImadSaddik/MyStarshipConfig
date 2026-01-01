@@ -18,7 +18,7 @@ I wrote a simple script to set this up for you.
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/ImadSaddik/MyStarshipConfig.git
+   git clone git@github.com:ImadSaddik/MyStarshipConfig.git
    cd MyStarshipConfig
     ```
 
