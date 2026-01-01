@@ -6,6 +6,7 @@ I love Starship because it is incredibly fast and shows me exactly what I need t
 
 >[!IMPORTANT]
 >Because this configuration relies heavily on icons, you need a terminal font that supports them. If you don't use a Nerd Font, you will see weird boxes () instead of cool icons.
+>
 >I recommend using [JetBrainsMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/JetBrainsMono.zip).
 
 ## How to use it
