@@ -36,7 +36,7 @@ If you prefer to move the files yourself:
 1. Install Starship:
 
     ```bash
-    curl -sS [https://starship.rs/install.sh](https://starship.rs/install.sh) | sh
+    curl -sS https://starship.rs/install.sh | sh
     ```
 
 2. Copy the config file:
