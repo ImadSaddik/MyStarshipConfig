@@ -48,6 +48,22 @@ If you prefer to move the files yourself:
 
 3. Add the init script to your shell config (like `.bashrc` or `.zshrc`):
 
+    For `bash`, add this to `~/.bashrc`:
+
     ```bash
     eval "$(starship init bash)"
     ```
+
+    For `zsh`, add this to `~/.zshrc`:
+
+    ```bash
+    eval "$(starship init zsh)"
+    ```
+
+    For `fish`, add this to `~/.config/fish/config.fish`:
+
+    ```fish
+    starship init fish | source
+    ```
+
+For other shells, please [check the official documentation](https://starship.rs/guide/#step-2-set-up-your-shell-to-use-starship).
