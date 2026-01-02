@@ -29,4 +29,34 @@ cp "$CONFIG_FILE" "$TARGET_FILE"
 
 echo ""
 echo "Done! Your shell prompt is now updated."
-echo "If you haven't already, make sure to add 'eval \"\$(starship init bash)\"' to your .bashrc or appropriate shell config file."
+echo "To activate it, add the following line to your config file:"
+
+CURRENT_SHELL=$(basename "$SHELL")
+case "$CURRENT_SHELL" in
+    "fish")
+        echo "  starship init fish | source"
+        ;;
+    "zsh")
+        echo "  eval \"\$(starship init zsh)\""
+        ;;
+    "bash")
+        echo "  eval \"\$(starship init bash)\""
+        ;;
+    "ion")
+        echo "  eval \$(starship init ion)"
+        ;;
+    "tcsh")
+        echo "  eval \`starship init tcsh\`"
+        ;;
+    "xonsh")
+        echo "  execx(\$(starship init xonsh))"
+        ;;
+    "elvish")
+        echo "  eval (starship init elvish)"
+        ;;
+    *)
+        echo "Detected shell: $CURRENT_SHELL"
+        echo "Please check the Starship documentation for setup instructions:"
+        echo "https://starship.rs/guide/#step-2-set-up-your-shell-to-use-starship"
+        ;;
+esac
